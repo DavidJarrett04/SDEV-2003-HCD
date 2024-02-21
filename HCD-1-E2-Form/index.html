@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>My Restaurant</h1>
-    <h2>Login</h2>
-    <form>
-      <div id="Username">
-        <label> Username </label>
-        <input type="text" minlength="2" required/>
 
-        <div id="Password">
-            <label> Password </label>
-            <input type="text" minlength="6" required />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-            <div id="Email">
-            <label> Email</label> 
-            <input type="text" required>
+<body>
+  <audio controls loop>
+    <source src="https://cdn.freesound.org/previews/633/633052_12333864-lq.mp3" type="audio/mp3">
+    Your Browser does not support the audio element.
+  </audio>
+  <form>
+    <div id="Username">
+      <label> Username </label>
+      <input type="text" minlength="2" required />
+    </div>
 
-            <div id="Date"> 
-                <label>Booking</label>
-                <input type="date" required>
+    <div id="Password">
+      <label> Password </label>
+      <input type="text" minlength="6" required />
+    </div>
 
-                <div id="People">
-                    <label>Guests</label>
-                    <input type="number" min="1" max="8" required>
+    <div id="Email">
+      <label> Email</label>
+      <input type="text" required>
+    </div>
 
-                    <div id="Cancellation">
-                        <label>"I agree to the cancellation policy"</label>
-                        <input type="checkbox" required>
+    <div id="Date">
+      <label>Booking</label>
+      <input type="date" required>
+    </div>
 
-                        <div id="Dish">
-                         <label>Rating</label>
-                         <input type="range" datalist id="Rating" min="1" max="5">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                         </datalist>
-                        </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <button type="submit">Sumbit</button>
-    </form>
-    <audio controls loop>
-<source src="633052_12333864-lq (1).mp3" type="audio/mp3">
-Your Browser does not support the audio element.
-    </audio>
-  </body>
+    <div id="People">
+      <label>Guests</label>
+      <input type="number" min="1" max="8" required>
+    </div>
+
+    <div id="Cancellation">
+      <label>"I agree to the cancellation policy"</label>
+      <input type="checkbox" required>
+    </div>
+
+    <div id="Dish">
+      <label>Rating</label>
+      <input type="range" id="Rating" min="1" max="5" list="rating">
+      <datalist id="rating">
+      <option value="1"></option>
+      <option value="2"></option>
+      <option value="3"></option>
+      <option value="4"></option>
+      <option value="5"></option>
+      </datalist>
+    </div>
+
+    <button type="submit">Sumbit</button>
+  </form>
+</body>
+
 </html>
