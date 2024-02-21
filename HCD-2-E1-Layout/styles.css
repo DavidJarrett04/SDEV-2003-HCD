@@ -18,6 +18,24 @@ body {
     background-color: #f4f4f4;
     padding: 10px 0;
     /* Add properties for flexbox below this comment */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    .col {
+        display: flex;
+        flex-flow: column;
+    }
+
+
+
+
+
+
+}
+
+
 }
 
 /* Learners will add the rest of their CSS below this line */
