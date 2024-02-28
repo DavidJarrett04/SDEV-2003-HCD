@@ -18,23 +18,36 @@ body {
     background-color: #f4f4f4;
     padding: 10px 0;
     /* Add properties for flexbox below this comment */
+
+.wrapper {
+    display: grid;
+}
+
+.wrapper>.container {
+    background-color: black;
+}
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: 10px;
 
     .col {
         display: flex;
         flex-flow: column;
     }
-
-
-
-
-
-
 }
-
+.wrapper>.site-footer{
+    display: grid;
+    grid-template-rows: 20% 50px
+}
+.wrapper>container{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+}
+nav ul {
+    display: grid;
 
 }
 
