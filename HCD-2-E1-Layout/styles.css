@@ -18,7 +18,7 @@ body {
     background-color: #f4f4f4;
     padding: 10px 0;
     /* Add properties for flexbox below this comment */
-
+display: flex;
 .wrapper {
     display: grid;
 }
@@ -52,3 +52,7 @@ nav ul {
 }
 
 /* Learners will add the rest of their CSS below this line */
+.main-content {
+    display: grid;
+    justify-content: left;
+}
