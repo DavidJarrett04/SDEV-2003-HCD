@@ -18,16 +18,11 @@ body {
     background-color: #f4f4f4;
     padding: 10px 0;
     /* Add properties for flexbox below this comment */
-display: flex;
-.wrapper {
-    display: grid;
-}
-
-.wrapper>.container {
-    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 .container {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     padding: 10px;
 
@@ -36,23 +31,24 @@ display: flex;
         flex-flow: column;
     }
 }
-.wrapper>.site-footer{
-    display: grid;
+.site-footer{
+    display: flex;
+    justify-content: center;
     grid-template-rows: 20% 50px
 }
-.wrapper>container{
-    background-color: blue;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-}
-nav ul {
-    display: grid;
-
+.navigation{
+    display: flex;
+    justify-content: center;
 }
 
 /* Learners will add the rest of their CSS below this line */
-.main-content {
+.maincontent{
     display: grid;
-    justify-content: left;
+    grid-column: 3;
+    grid-row: 1/3;
+}
+.sidebar {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1/2;
 }
