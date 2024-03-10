@@ -16,39 +16,41 @@ body {
 .site-header,
 .site-footer {
     background-color: #f4f4f4;
-    padding: 10px 0;
+    padding: 10px;
     /* Add properties for flexbox below this comment */
     display: flex;
     justify-content: center;
 }
 .container {
     display: grid;
-    justify-content: space-between;
-    padding: 10px;
-
-    .col {
-        display: flex;
-        flex-flow: column;
-    }
+    padding: 15px;
+    grid-template-columns: 45fr 3fr;
+    grid-template-rows: 25fr 2fr;
+    gap: 12px;
+   justify-content: center;
 }
+.sidebar {
+    display: grid;
+    padding: 15px;
+    grid-template-rows: 10fr;
+}
+
 .site-footer{
     display: flex;
-    justify-content: center;
-    grid-template-rows: 20% 50px
+    justify-content:center;
 }
 .navigation{
     display: flex;
     justify-content: center;
 }
-
-/* Learners will add the rest of their CSS below this line */
-.maincontent{
+ .main-content{
     display: grid;
-    grid-column: 3;
-    grid-row: 1/3;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 6fr 2fr 1fr;
+    place-self: center;
 }
 .sidebar {
     display: grid;
-    grid-column: 2;
-    grid-row: 1/2;
+    grid-template-rows: 1/4fr 1fr 1fr;
+   place-self: center; 
 }
