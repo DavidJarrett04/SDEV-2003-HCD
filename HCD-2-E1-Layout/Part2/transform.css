@@ -1,0 +1,32 @@
+/* Universal selector for basic setup - assumed pre-existing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for .items class - assumed pre-existing */
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Learners will add the rest of their CSS below this line */
+  
+  .items li {
+    font-size: 18px;
+    color: green;
+    background-color: bisque;
+    padding: 10px;
+  }
+  
+  /* Step 8 & 9: Interactive rule for even li elements - background color change on hover with transition */
+  
+  /* Apply a transition for background color change - combined with Step 8 */
+  
+  /* Step 10 & 11: Interactive rule for odd li elements - font size and weight change on hover */
+  
+  /* Ensure smooth transition for font size and weight - combined with Step 10 */
+  
