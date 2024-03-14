@@ -14,14 +14,72 @@
   }
   
   /* Learners will add the rest of their CSS below this line */
-  
   .items li {
     font-size: 18px;
-    color: green;
-    background-color: bisque;
+    color: darkorange;
     padding: 10px;
+    list-style-type: none;
   }
+  .ItemA:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    transition: font-weight 0.3s ease;
+  }
+  .ItemA{
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 8px;
+  }
+  .ItemB:hover {
+    background-color: darkolivegreen;
+  }
+  .ItemB {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 8px;
+  }
+  .ItemC:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    transition: font-weight 0.3s ease;
+  }
+  .ItemC {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 8px;
+  }
+  .ItemD:hover {
+    background-color: darkolivegreen;
+  }
+  .ItemD {
+  background-color: lightblue;
+  transition: background-color 0.3s ease;
+  padding:10px;
+  margin: 10px;
+  border: 1px;
+  border-color: darkblue;
+  border-style: solid;
+  border-radius: 8px;
+  }
+
+
   
+
   /* Step 8 & 9: Interactive rule for even li elements - background color change on hover with transition */
   
   /* Apply a transition for background color change - combined with Step 8 */
