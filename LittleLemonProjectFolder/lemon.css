@@ -46,13 +46,21 @@ a {
 
 
 .sidebar {
-display: grid;
+display: flex;
 padding: 15px;
-place-self: center;
+justify-content: left;
+box-sizing: border-box;
+background: coral;
+margin-bottom: 2rem;
 }
 
-h3.p{
-font-size: 5px;
+.h3{
+    background-color: lightblue;
+    font-weight: bold;
+}
+.h3 p{
+font-size: 19px;
+background-color:blanchedalmond;
 }
 
 img {
@@ -63,4 +71,67 @@ img {
 
 container.img {
     border-radius: 50%;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 30%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    color: antiquewhite; 
+    font-size: 30px;
+    image-resolution: 300dpi snap;
+  }
+.overlay-text p {
+  position: absolute;
+  font-size: 27px;
+}
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 2px;
+    width: 235px;
+    padding: 20px;
+    margin: 20px;
+    transition: ease 0.3s;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+  }
+
+  .card:nth-child(even) {
+    color: green;
+  }
+  .card:nth-child(odd) {
+    color: lightblue;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: ease .3s;
+  }
+  .card-container {
+    justify-content: center;
+  }
+
+  @media screen and (max-height: 768px) {
+    .sidebar {
+      display: flex;
+      justify-content: left;
+      padding: 25px;
+    }
+    .card-container {
+      justify-content: center;
+    }
+}
+
+.site-footer img {
+width: 50px;
+height: 75px;
 }

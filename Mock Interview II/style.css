@@ -5,9 +5,11 @@ body {
     min-height: 100vh;
   }
   
+  main {
+
   .header {
     height: 72px;
-    background: darkmagenta;
+    background: blue;
     color: white;
     display: flex;
     align-items: center;
@@ -26,7 +28,7 @@ body {
   
   .sidebar {
     width: 300px;
-    background: green;
+    background: blue;
     box-sizing: border-box;
   }
   
@@ -61,7 +63,7 @@ flex: 1px;
     color: pink;
   }
   .card:nth-child(odd) {
-    color: purple;
+    color: lightblue;
   }
   .card:hover {
     transform: scale(1.05);
@@ -70,13 +72,11 @@ flex: 1px;
 
   @media screen and (max-height: 768px) {
     .sidebar {
-      display: none;
+      display: flex;
       justify-content: center;
+      padding: 25px;
     }
     .card-container {
       justify-content: center;
     }
-  }
-  a.home {
-    
   }
