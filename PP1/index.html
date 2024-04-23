@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front Mentor | Interactive Pricing Component</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./Images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"/>
+    <link rel="sylesheet" href="styles.css" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component for users...</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Efficent, traffic based pricing for your website</h1>
+        <p>Sign up for our 30 day trial. No credit card required. Cancel anytime.</p>
+      </header>
+
+      <aside>
+        <!-- Price bar monthly or yearly!!! -->
+        <div class="tax"></div>
+        <div class="page-views"></div>
+        <span>100K</span> pageviews
+      </div>
+
+      <div class="price">
+        <span>$ <span class="pricefix">16</span>.00</span>
+        <span class="month">/month</span>
+      </div>
+<!-- Progress Bar for component -->
+
+<div class="progress">
+  <div class="progress bar">
+<input type="range" min="1" max="5" step="1" value="3" class="DavidRange">
+  </div>
+  <!-- Swtich between month and year pricing for user-->
+<div class="monthly">
+  <span>Monthly Billing</span>
+  <label class="switcher">
+<input type="checkbox">
+<span class="slide mechanism"></span>
+<span class="discount">25% discount</span>
+  </label>
+  <span>Yearly Billing</span>
+  <span class="discount">25% discount</span>
+
+  <div class="Trial Start"></div>
+  <ul>
+    <li>Complete Data Ownership</li>
+    <li>Email reports</li>
+  </ul>
+  <button>Start my trial</button>
+</div>
+</div>
+
+
+
+
+      
+      </aside>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">David Jarrett</a>.
+
+      <script src="java.js"></script>
+    </div>
+  </body>
+</html>
