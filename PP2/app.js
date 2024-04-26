@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 const rating_card=document.querySelectorAll(".ratings span");
 const submit_button = document.querySelector(".submit_button");
-const rate_point=document.getElementById("rate")
+const rate_point=document.getElementById("rating")
 const rating_section = document.querySelector(".rating_section");
 const thank_section = document.querySelector(".thankyou-section-hidden");
 

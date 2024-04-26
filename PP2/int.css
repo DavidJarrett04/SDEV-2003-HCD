@@ -105,6 +105,7 @@ body {
   font-weight: bold;
   background-color: var(--Orange);
   border-radius: 32px;
+  transform: translate(17px, 21px) rotate(7deg);
 }
 
 .submit_button:hover {
@@ -114,6 +115,10 @@ body {
 
 .thankyou-section-hidden {
   text-align: center;
+  animation-duration: 5s;
+  animation-name: slide-in;
+  color: crimson;
+  font-weight: bold;
 }
 
 .ratings {
@@ -129,4 +134,16 @@ body {
 .review {
   background-color: var(--Orange) !important;
   color: var(--White) !important;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
 }
