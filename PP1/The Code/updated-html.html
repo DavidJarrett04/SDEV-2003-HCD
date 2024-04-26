@@ -4,8 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta title="Interactive Pricing Component by David Jarrett"/>
     <title>Front Mentor | Interactive Pricing Component</title>
-    <link rel="sylesheet" href="styles1.css"/>
+    <link rel="stylesheet" href="./styles1.css"/>
     <link
       rel="icon"
       sizes="32x32"
@@ -36,23 +37,25 @@
     </style>
   </head>
   <body>
+    <div class="totality">
       <header>
-        <main class="container"></main>
-        <h1>Efficent, traffic based pricing for your website</h1>
+        <main class="container">
+        <h1> Efficent, traffic based pricing for your website</h1>
         <p>Sign up for our 30 day trial. No credit card required. Cancel anytime.</p>
+      </main>
       </header>
-
+        <div class="body-styling">
       <aside>
         <!-- Price bar monthly or yearly!!! -->
         <div class="tax"></div>
-        <div class="page-views"></div>
-        <span>100K</span> pageviews
-      </div>
+        <div>
+            <span class="page-views">100K</span>page-views
+        </div>
+    <div class="price">
+    <span class="pricefix">$16.00</span>
+    <span class="month">/month</span>
+</div>
 
-      <div class="price">
-        <span>$ <span class="pricefix">16</span>.00</span>
-        <span class="month">/month</span>
-      </div>
 <!-- Progress Bar for component -->
 
 <div class="progress">
@@ -63,19 +66,35 @@
 <div class="monthly">
   <span>Monthly Billing</span>
   <label class="switcher">
-<input type="checkbox">
+<input type="checkbox" class="myCheckbox">
 <span class="slide mechanism"></span>
-<span class="discount">25% discount</span>
   </label>
   <span>Yearly Billing</span>
   <span class="discount">25% discount</span>
 
-  <div class="Trial Start"></div>
+  <div class="Trial Start">
   <ul>
+    <li>Unlimited Websites</li>
     <li>Complete Data Ownership</li>
     <li>Email reports</li>
   </ul>
   <button>Start my trial</button>
+
+
+  <div class="Subscribe">Subscribe To Our Newsletter!
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div class="form">
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <button>Subscribe!</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -91,8 +110,7 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">David Jarrett</a>.
-
-      <script src="java.js"></script>
     </div>
+    <script src="./java.js"></script>
   </body>
 </html>
